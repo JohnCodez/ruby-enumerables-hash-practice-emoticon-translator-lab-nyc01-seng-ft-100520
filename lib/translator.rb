@@ -11,8 +11,10 @@ def load_library(location)
   emoji
 end
 
-def get_japanese_emoticon
+def get_japanese_emoticon(location, emoticon)
   # code goes here
+  all = load_library(location)
+  all[emoticon][0]
 end
 
 def get_english_meaning
