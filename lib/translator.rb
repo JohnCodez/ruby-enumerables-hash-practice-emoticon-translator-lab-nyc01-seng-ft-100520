@@ -17,7 +17,7 @@ def get_japanese_emoticon(location, emoticon)
   all.each do |name, key|
     key.each do |ekey|
       if emoticon == ekey
-        return key[0]
+        return key[1]
       else 
         return "Sorry, that emoticon was not found"
       end
