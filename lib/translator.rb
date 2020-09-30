@@ -39,7 +39,7 @@ def get_english_meaning(location, emoticon)
   
   all.each do |name, key|
     if emoticon == key[:japanese]
-      output = key[:english]
+      output = key[name]
     end
   end
   
