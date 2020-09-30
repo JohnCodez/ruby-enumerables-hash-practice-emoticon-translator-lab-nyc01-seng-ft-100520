@@ -4,13 +4,17 @@ require "yaml"
 def load_library(location)
   # code goes here
   emojis = YAML.load_file(location)
-  emojis.map do |name, key|
+  emoji = {}
+  emojis.each do |name, key|
     temps = []
+    
     key.each do |emo|
       temps << emo
     end
+    
     emoji = {name => {:english => temps[0], :japanese => temps[1]}}
   end
+  emoji
 end
 
 def get_japanese_emoticon
