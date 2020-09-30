@@ -9,7 +9,7 @@ def load_library
     key.each do |emo|
       temps << emo
     end
-    emoji = {name => english: temp[0], japanese: temp[1]}
+    emoji = {name => {english: temp[0]}, {japanese: temp[1]}}
   end
 end
 
