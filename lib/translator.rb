@@ -38,10 +38,8 @@ def get_english_meaning(location, emoticon)
   output = ""
   
   all.each do |name, key|
-    key.each do |ekey|
-      if emoticon == ekey
+      if emoticon == key[1]
         output = key[0]
-      end
     end
   end
   
