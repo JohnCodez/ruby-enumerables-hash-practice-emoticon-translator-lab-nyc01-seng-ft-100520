@@ -14,14 +14,20 @@ end
 def get_japanese_emoticon(location, emoticon)
   # code goes here
   all = load_library(location)
+  output = ""
+  
   all.each do |name, key|
     key.each do |ekey|
       if emoticon == ekey
-        return key[1]
-      else 
-        return "Sorry, that emoticon was not found"
+        output = key[1]
       end
     end
+  end
+  
+  if output != ""
+    return output
+  else 
+    return "Sorry, that emoticon was not found"
   end
 end
 
