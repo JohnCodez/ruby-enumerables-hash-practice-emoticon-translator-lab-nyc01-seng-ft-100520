@@ -27,8 +27,10 @@ end
 
 def get_english_meaning(location, emoticon)
   # code goes here
+  
   all = load_library(location)
   output = ""
+  
   all.each do |name, key|
     key.each do |ekey|
       if emoticon == ekey
@@ -36,9 +38,11 @@ def get_english_meaning(location, emoticon)
       end
     end
   end
+  
   if output == ""
     return "Sorry, that emoticon was not found"
   else 
     return output
   end
+  
 end
