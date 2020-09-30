@@ -39,7 +39,7 @@ def get_english_meaning(location, emoticon)
     end
   end
   
-  if output == ""
+  if output != ""
     return "Sorry, that emoticon was not found"
   else 
     return output
