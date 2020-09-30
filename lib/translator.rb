@@ -18,7 +18,7 @@ def get_japanese_emoticon(location, emoticon)
   
   all.each do |name, key|
     if emoticon == key[:english]
-      output = name
+      output = key[:japanese]
     end
   end
   
