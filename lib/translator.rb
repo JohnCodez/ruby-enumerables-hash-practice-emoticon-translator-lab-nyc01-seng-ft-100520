@@ -19,7 +19,7 @@ def get_japanese_emoticon(location, emoticon)
       if emoticon == ekey
         return key[0]
       else 
-        return "Sorry"
+        return "Sorry, that emoticon was not found"
       end
     end
   end
