@@ -6,13 +6,7 @@ def load_library(location)
   emojis = YAML.load_file(location)
   emoji = {}
   emojis.each do |name, key|
-    temps = []
-    
-    key.each do |emo|
-      temps << emo
-    end
-    
-    emoji = {name => {:english => temps[0], :japanese => temps[1]}}
+    emoji = {name => {:english => temps[0], :japanese => key[1]}}
   end
   emoji
 end
