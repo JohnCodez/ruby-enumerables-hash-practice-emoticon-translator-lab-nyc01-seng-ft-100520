@@ -4,6 +4,10 @@ require "yaml"
 def load_library
   # code goes here
   emojis = YAML.load_file('emoticons.yml')
+  emojis.map do |name|
+    name => 
+    
+  end
 end
 
 def get_japanese_emoticon
