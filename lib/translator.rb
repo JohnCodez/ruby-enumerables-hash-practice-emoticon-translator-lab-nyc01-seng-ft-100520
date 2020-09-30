@@ -5,7 +5,7 @@ def load_library
   # code goes here
   emojis = YAML.load_file('emoticons.yml')
   emojis.map do |name, key|
-    name
+    emoji = {name => :english, :japanese}
     
   end
 end
