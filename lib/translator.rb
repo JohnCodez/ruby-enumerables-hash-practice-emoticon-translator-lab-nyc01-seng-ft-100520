@@ -25,7 +25,7 @@ def get_japanese_emoticon(location, emoticon)
   end
 end
 
-def get_english_meaning
+def get_english_meaning(location, emoticon)
   # code goes here
   all = load_library(location)
   output = ""
