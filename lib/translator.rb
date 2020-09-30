@@ -14,7 +14,15 @@ end
 def get_japanese_emoticon(location, emoticon)
   # code goes here
   all = load_library(location)
-  all[emoticon][0]
+  all.each do |name, key|
+    key.each do |ekey|
+      if emoticon == ekey
+        return key[0]
+      else 
+        return
+      end
+    end
+  end
 end
 
 def get_english_meaning
