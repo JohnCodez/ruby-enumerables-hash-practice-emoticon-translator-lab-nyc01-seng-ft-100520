@@ -1,9 +1,9 @@
 # require modules here
 require "yaml"
 
-def load_library
+def load_library(location)
   # code goes here
-  emojis = YAML.load_file('emoticons.yml')
+  emojis = YAML.load_file(location)
   emojis.map do |name, key|
     temps = []
     key.each do |emo|
